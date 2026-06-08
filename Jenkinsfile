@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git(
-                    credentialsId: 'gitpipeline'
+                    credentialsId: 'gitpipeline',
                     url: 'https://github.com/seendii/jenkinspipeline.git',
                     branch: 'main'
                 )
